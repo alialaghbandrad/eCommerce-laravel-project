@@ -1,10 +1,10 @@
 <?php 
 use App\Http\Controllers\ProductController;
 $total=0;
-//if(Session::has('user'))
-//{
-//  $total= ProductController::cartItem();
-//}
+if(Session::has('user'))
+{
+  $total= ProductController::cartItem();
+}
 
 ?>
 <nav class="navbar navbar-default">
